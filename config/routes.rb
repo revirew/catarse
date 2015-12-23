@@ -68,6 +68,7 @@ Catarse::Application.routes.draw do
 
     get 'video', on: :collection
     member do
+      get 'dashboard'
       get 'insights'
       put 'pay'
       get 'embed'
@@ -110,7 +111,6 @@ Catarse::Application.routes.draw do
   get "/explore" => 'high_voltage/pages#show', id: 'explore'
   get "/team" => 'high_voltage/pages#show', id: 'team'
   get "/flex" => 'high_voltage/pages#show', id: 'flex'
-  get "/projects_dashboard" => 'high_voltage/pages#show', id: 'projects_dashboard'
 
 
   # User permalink profile
